@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>프리미엄 골드 키위 | 자연이 선물한 달콤함</title>
+    <meta name="description" content="청정 자연에서 자란 프리미엄 골드 키위, 달콤함과 비타민을 한 번에 즐기세요.">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: '#E5A91E',
+                        'gold-light': '#FFF8E1',
+                        green: '#2E7D32',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Navigation Bar -->
+    <nav class="fixed w-full z-50 glass shadow-sm transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="text-2xl font-bold text-green flex items-center gap-2">
+                        <i class="fa-solid fa-seedling text-gold"></i>
+                        골드 키위
+                    </a>
+                </div>
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#home" class="text-gray-700 hover:text-gold font-medium transition-colors">홈페이지</a>
+                    <a href="#product" class="text-gray-700 hover:text-gold font-medium transition-colors">제품</a>
+                    <a href="#story" class="text-gray-700 hover:text-gold font-medium transition-colors">스토리</a>
+                    <a href="#contact" class="text-gray-700 hover:text-gold font-medium transition-colors">문의</a>
+
+                    <div class="border-l border-gray-300 h-6 mx-2"></div>
+
+                    <a href="index_en.html"
+                        class="text-sm font-semibold bg-gray-100 hover:bg-gray-200 px-3 py-1 rounded-full transition-colors text-gray-600">EN</a>
+                </div>
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-600 hover:text-gray-900 focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg absolute w-full">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#home"
+                    class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-gold hover:bg-gray-50 rounded-md">홈페이지</a>
+                <a href="#product"
+                    class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-gold hover:bg-gray-50 rounded-md">제품</a>
+                <a href="#story"
+                    class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-gold hover:bg-gray-50 rounded-md">스토리</a>
+                <a href="#contact"
+                    class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-gold hover:bg-gray-50 rounded-md">문의</a>
+                <a href="index_en.html"
+                    class="block px-3 py-2 text-base font-medium text-gray-600 bg-gray-100 rounded-md mt-2 text-center">English
+                    Version</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 md:pr-12 text-center md:text-left z-10">
+                <span
+                    class="inline-block py-1 px-3 rounded-full bg-gold-light text-gold font-semibold text-sm mb-4 border border-gold/30 shadow-sm">Premium
+                    Quality</span>
+                <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-6">
+                    자연이 선물한 <br />
+                    <span class="text-gold">달콤함의 결정체</span>
+                </h1>
+                <p class="text-lg text-gray-600 mb-8 max-w-lg mx-auto md:mx-0">
+                    청정 자연에서 정성껏 키운 프리미엄 골드 키위.
+                    부드러운 식감과 풍부한 과즙, 그리고 비타민 C가 가득한 황금빛 달콤함을 경험해보세요.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                    <a href="#product"
+                        class="bg-gold hover-bg-gold text-white font-bold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1">
+                        자세히 보기
+                    </a>
+                    <a href="#contact"
+                        class="bg-white border-2 border-gold text-gold hover:bg-gold-light font-bold py-3 px-8 rounded-full transition-all">
+                        구매 문의
+                    </a>
+                </div>
+            </div>
+
+            <div class="md:w-1/2 mt-12 md:mt-0 relative">
+                <!-- Decorative background elements -->
+                <div
+                    class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-72 h-72 md:w-96 md:h-96 bg-gold-light rounded-full mix-blend-multiply filter blur-2xl opacity-70">
+                </div>
+                <div
+                    class="absolute -bottom-10 -right-10 w-64 h-64 bg-green/10 rounded-full mix-blend-multiply filter blur-2xl opacity-70">
+                </div>
+
+                <!-- Hero Image -->
+                <!-- USER INSTRUCTION: Place the uploaded image in the assets folder and rename to image.png or update this src -->
+                <img src="assets/image.png" alt="프리미엄 골드 키위"
+                    class="relative z-10 w-full max-w-md mx-auto animate-float drop-shadow-2xl rounded-3xl object-cover"
+                    id="hero-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="product" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 sm:text-4xl">왜 골드 키위인가요?</h2>
+                <div class="w-24 h-1 bg-gold mx-auto mt-4 rounded-full"></div>
+                <p class="mt-4 text-xl text-gray-600">특별한 맛과 영양을 자랑하는 3가지 이유</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <!-- Feature 1 -->
+                <div class="bg-gray-50 rounded-2xl p-8 text-center hover-scale border border-gray-100">
+                    <div class="w-16 h-16 mx-auto bg-gold-light rounded-full flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-lemon text-3xl text-gold"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">놀라운 비타민 C</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        하루 한 개면 충분합니다! 오렌지보다 풍부한 비타민 C가 함유되어 있어 면역력 강화와 피로 회복에 탁월합니다.
+                    </p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="bg-gray-50 rounded-2xl p-8 text-center hover-scale border border-gray-100">
+                    <div class="w-16 h-16 mx-auto bg-green/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-face-smile text-3xl text-green"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">극강의 달콤함</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        신맛은 줄이고 단맛은 끌어올렸습니다. 입안 가득 퍼지는 부드러운 과육과 풍부한 과즙을 즐겨보세요.
+                    </p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="bg-gray-50 rounded-2xl p-8 text-center hover-scale border border-gray-100">
+                    <div class="w-16 h-16 mx-auto bg-blue-50 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-earth-americas text-3xl text-blue-500"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">청정 지역 재배</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        최적의 기후와 비옥한 토양을 갖춘 청정 지역에서 엄격한 품질 관리를 거쳐 안전하게 재배됩니다.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Story Section -->
+    <section id="story" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row items-center gap-12">
+                <div class="lg:w-1/2">
+                    <div class="aspect-w-4 aspect-h-3 rounded-2xl overflow-hidden shadow-xl">
+                        <!-- Story Image Placeholder -->
+                        <div
+                            class="w-full h-full min-h-[300px] bg-gradient-to-br from-green to-teal-700 flex items-center justify-center">
+                            <i class="fa-solid fa-leaf text-white text-6xl opacity-50"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2">
+                    <h2 class="text-3xl font-bold text-gray-900 sm:text-4xl mb-6">우리의 이야기</h2>
+                    <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                        저희는 가장 맛있고 영양가 높은 키위를 재배하기 위해 오랜 시간 연구해 왔습니다.
+                        햇살과 바람, 그리고 정성이 만나 탄생한 것이 바로 이 '골드 키위'입니다.
+                    </p>
+                    <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                        자연을 존중하는 친환경 농법을 고집하며, 여러분의 식탁에 가장 신선한 상태로
+                        전달될 수 있도록 수확부터 포장까지 모든 과정에 심혈을 기울입니다.
+                    </p>
+                    <ul class="space-y-4">
+                        <li class="flex items-center">
+                            <i class="fa-solid fa-check-circle text-green mr-3 text-xl"></i>
+                            <span class="text-gray-800 font-medium">100% 친환경 재배</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa-solid fa-check-circle text-green mr-3 text-xl"></i>
+                            <span class="text-gray-800 font-medium">당도 선별 시스템</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa-solid fa-check-circle text-green mr-3 text-xl"></i>
+                            <span class="text-gray-800 font-medium">산지 직송 신선 배송</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-gray-500 text-sm">
+            &copy; 2026 Gold Kiwi. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        const navbar = document.getElementById('navbar');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Navbar shadow on scroll
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 10) {
+                navbar.classList.add('shadow-md');
+            } else {
+                navbar.classList.remove('shadow-md');
+            }
+        });
+    </script>
+</body>
+
+</html>
